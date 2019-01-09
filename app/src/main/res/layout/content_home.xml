@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".HomeActivity"
+    tools:showIn="@layout/app_bar_home">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtKota"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/strokeorange"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:textColor="#262626" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+
+
+            <Spinner
+                android:id="@+id/spnKecamatan"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/strokeorange"
+                android:gravity="center_horizontal"
+                android:hint="Kecamatan"
+                android:layout_marginBottom="5dp"
+                android:textColor="#262626" />
+
+            <Spinner
+                android:id="@+id/spnResto"
+                android:layout_width="150dp"
+                android:layout_marginLeft="5dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/strokeorange"
+                android:gravity="center_horizontal"
+                android:hint="Restoran"
+                android:layout_marginBottom="5dp"
+                android:textColor="#262626" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/slider"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:elevation="16dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/promo1" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerViewMakanan"
+            android:layout_margin="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </android.support.v7.widget.RecyclerView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnMartabak"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/martabak"
+                android:text="Martabak"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnRice"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/ricedelight"
+                android:text="Rice Delights"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnChicken"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/chickenduck"
+                android:text="Chiceken &amp; Duck"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnSnack"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/snack"
+                android:text="Snack"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnPizza"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/pizzapasta"
+                android:layout_margin="5dp"
+                android:textAllCaps="false"
+                android:text="Pizza &amp; Pasta"
+                android:textStyle="bold"
+                android:textColor="#ffffff"/>
+
+            <Button
+                android:id="@+id/btnNoodles"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/noodles"
+                android:layout_margin="5dp"
+                android:textAllCaps="false"
+                android:text="Noodles"
+                android:textStyle="bold"
+                android:textColor="#ffffff"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnBaksa"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/baksosotosuoup"
+                android:layout_margin="5dp"
+                android:textAllCaps="false"
+                android:text="Bakso, Soto &amp; Soup"
+                android:textStyle="bold"
+                android:textColor="#ffffff"/>
+
+            <Button
+                android:id="@+id/btnFastfood"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/fastfood"
+                android:layout_margin="5dp"
+                android:textAllCaps="false"
+                android:text="Fast Food"
+                android:textStyle="bold"
+                android:textColor="#ffffff"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnBeverages"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/baverages"
+                android:layout_margin="5dp"
+                android:textAllCaps="false"
+                android:text="Beverages"
+                android:textStyle="bold"
+                android:textColor="#ffffff"/>
+
+            <Button
+                android:id="@+id/btnSate"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/sate"
+                android:layout_margin="5dp"
+                android:textAllCaps="false"
+                android:text="Sate"
+                android:textStyle="bold"
+                android:textColor="#ffffff"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnJapanese"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/japanese"
+                android:layout_margin="5dp"
+                android:textAllCaps="false"
+                android:text="Japanese"
+                android:textStyle="bold"
+                android:textColor="#ffffff"/>
+
+            <Button
+                android:id="@+id/btnSweet"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/sweetdesert"
+                android:layout_margin="5dp"
+                android:textAllCaps="false"
+                android:text="Sweets &amp; Desserts"
+                android:textStyle="bold"
+                android:textColor="#ffffff"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnWestern"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/western"
+                android:layout_margin="5dp"
+                android:textAllCaps="false"
+                android:text="Western"
+                android:textStyle="bold"
+                android:textColor="#ffffff"/>
+
+            <Button
+                android:id="@+id/btnBakery"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/bakery"
+                android:layout_margin="5dp"
+                android:textAllCaps="false"
+                android:text="Bakery"
+                android:textStyle="bold"
+                android:textColor="#ffffff"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

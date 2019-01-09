@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".recycleview_toko">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/Img_Toko"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp"
+        android:src="@mipmap/ic_launcher"
+        app:civ_border_color="#FFFFFF"
+        app:civ_border_width="2dp" />
+
+
+    <TextView
+        android:id="@+id/Nama_Toko"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Img_Toko"
+        android:fontFamily="sans-serif"
+        android:gravity="center_horizontal"
+        android:text="Nama Toko"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Loc_Toko"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Nama_Toko"
+        android:fontFamily="sans-serif"
+        android:gravity="center_horizontal"
+        android:text="Location"
+        android:textSize="18dp"/>
+
+    <EditText
+        android:id="@+id/etSearch"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/Loc_Toko"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:hint="Pencarian Di Toko Ini"
+        android:drawableLeft="@drawable/ic_search_black_24dp"
+        android:padding="10dp"
+        android:background="@drawable/edittextputih"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@id/etSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+
+</RelativeLayout>
